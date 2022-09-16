@@ -1,0 +1,40 @@
+SET 'item' to 'id' and 'quantity = 1'
+INIT 'cart'
+
+
+
+FUNCTION increment(id)
+    SET 'id' with 'cartItem'
+
+    IF 'cartItem' is exist   
+        ADD 'cartItem.quantity' = 1
+    ELSE 
+        STORE 'cartItem' to 'cart'
+    ENDIF
+
+
+
+FUNCTION decrement (id)
+    SET 'id' with 'cartItem'
+
+    IF 'cartItem' is exist   
+        SUB 'cartItem.quantity' = 1
+    ELSE
+
+    ENDIF
+    
+
+FUNCTION calculate ()
+    SET 'total' = 0
+
+    for 'i' from 0 in 'cart' <= cart.length
+        'total' = 'total' + 'cart'['i'].quantity
+
+    
+        
+
+
+
+
+    
+    
